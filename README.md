@@ -7,7 +7,7 @@ Swordfish is a preprocessor language designed for minecraft datapack functions (
 Currently, the language supports macro definitions, formatted macro definitions, repeating lines and importing definition files. 
 
 ## Macro definitions
-A macro in swordfish is considered a string of text which is later replaced with something useful by the preprocessor. 
+A macro in swordfish is considered a string of text which is later replaced with its definition by the preprocessor. 
 
 To define a macro, use a `=` followed by a name and its definition
 ```
@@ -39,7 +39,7 @@ We may want to also seperate the summoning to make it reusable. For this we can 
 
 summon_sheep pos
 ```
-Normally macros inside of other macros will not expand. The purpose of formatted macros is to be able to do that. The above code produces the following ouptut
+Normally macros inside of other macros will not expand. The purpose of formatted macros is to be able to do that. The above code produces the following output
 ```
 execute at @a run summon minecraft:sheep ~1 ~ ~1
 ```
@@ -63,4 +63,4 @@ To import a file containing macros use a `-` followed by the file name
 ```
 =greet say Hello!
 ```
-All macros defined and the file will be bound and everything else will be ingored.
+All macros defined in the file will be bound and everything else will be ingored.
