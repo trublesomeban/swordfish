@@ -2,6 +2,8 @@
 
 Swordfish is a preprocessor language designed for minecraft datapack functions (.mcfunction files).
 
+# Installation
+
 # Features
 
 Currently, the language supports macro definitions, formatted macro definitions, repeating lines and importing definition files. 
