@@ -5,13 +5,13 @@ Swordfish is a preprocessor language designed for minecraft datapack functions (
 # Installation
 
 - [Linux binary](https://trublesomeban.github.io/swordfish/bin/linux/swordfish)
-- [Windows binary](https://trublesomeban.github.io/swordfish/bin/windows/swordfish.exe)
+- [Windows executable](https://trublesomeban.github.io/swordfish/bin/windows/swordfish.exe)
 
 **Make sure to add the location of the program to your path variable**
 
 # Usage
 
-To use the preprocessor, open you command line and `cd` into your datapack folder and (Assuming you have added the programs location to your path) type `swordfish {filename}`. This will run the preprocessor and output `{filename}.mcfunction` in the same folder.
+To use the preprocessor, open you command line and `cd` into your datapack folder and (Assuming you have added the programs location to your path variable) type `swordfish {filename}`. This will run the preprocessor and output `{filename}.mcfunction` in the same folder.
 
 # Features
 
