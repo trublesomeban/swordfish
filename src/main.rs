@@ -10,6 +10,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     if argv.len() < 2 {
         return Err(Box::from("[On read] No file provided"));
     }
+    let name = argv[1].split("/").last().unwrap().split(".").nth(0).unwrap();
     let target = match read(&argv[1]) {
                         Ok(v) => v,
                         Err(_) => return Err(Box::from(
@@ -117,7 +118,7 @@ fn main() -> Result<(), Box<dyn Error>> {
             }
         }
     }
-    write("./out.mcfunction", new.trim())?;
+    write(format!("./{}.mcfunction", name), new.trim())?;
     Ok(())
 }
 
