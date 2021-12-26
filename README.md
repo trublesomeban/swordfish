@@ -4,8 +4,8 @@ Swordfish is a preprocessor language designed for minecraft datapack functions (
 
 # Installation
 
-[Linux binary](https://trublesomeban.github.io/swordfish/bin/linux/swordfish)
-[Windows binary](https://trublesomeban.github.io/swordfish/bin/windows/swordfish.exe)
+* [Linux binary](https://trublesomeban.github.io/swordfish/bin/linux/swordfish)
+* [Windows binary](https://trublesomeban.github.io/swordfish/bin/windows/swordfish.exe)
 Make sure to add the location of the program to your path variable.
 
 # Usage
