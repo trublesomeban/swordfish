@@ -8,7 +8,7 @@ use std::{
 fn main() -> Result<(), Box<dyn Error>> {
     let argv = &args().into_iter().collect::<Vec<String>>();
     if argv.len() < 2 {
-        return Err(Box::from("No file provided"));
+        return Err(Box::from("[On read] No file provided"));
     }
     let target = match read(&argv[1]) {
                         Ok(v) => v,
