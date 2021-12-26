@@ -1,4 +1,4 @@
-scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick
+# Assume `scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick` to be defined in setup function
 =target @e[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:1}}},scores={click=1..}]
 =pos ^ ^5 ^
 =lightning minecraft:lightning_bolt
