@@ -24,7 +24,7 @@ A macro in swordfish is considered a string of text which is later replaced with
 To define a macro, use a `=` followed by a name and its definition
 
 ```
-=greet say Hello!
+$greet say Hello!
 ```
 
 To use the macro, simply type it's name.
@@ -47,17 +47,17 @@ This is called macro expansion.
 Sometimes, you may whish to have macros inside of macros. For example you may have a defintion that summons a certain entity, and some postition for it to be summoned
 
 ```
-=summon_sheep execute at @a run summon minecraft:sheep
-=pos ~1 ~ ~1
+$summon_sheep execute at @a run summon minecraft:sheep
+$pos ~1 ~ ~1
 ```
 
 We may want to also seperate the summoning to make it reusable. For this we can use the formatted macro
 
 ```
-=all_summon execute at @a run summon
-=entity miencraft:sheep
-=pos ~1 ~ ~1
-#summon_sheep all_summon entity
+$all_summon execute at @a run summon
+$entity miencraft:sheep
+$pos ~1 ~ ~1
+=summon_sheep all_summon entity
 
 summon_sheep pos
 ```
