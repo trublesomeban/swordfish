@@ -35,7 +35,11 @@ pub fn process_single(argv: &Vec<String>, target: Vec<u8>) -> Result<File, Box<d
                             line = line.replace(v.as_str(), replaces[i].as_str());
                         }
                     }
-                    line = line.replace("/", "\n");
+                    #[cfg(target_os = "linux")]
+                    let newline: &str = "\n";
+                    #[cfg(target_os = "windows")]
+                    let newline: &str = "\n\r";
+                    line = line.replace("/", newline);
                     let matchnreplace = parse_def(&line.to_string());
                     matches.push(matchnreplace.0);
                     replaces.push(matchnreplace.1);
