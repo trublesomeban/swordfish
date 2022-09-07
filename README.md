@@ -23,10 +23,10 @@ Currently, the language supports macro definitions, formatted macro definitions,
 
 A macro in swordfish is considered a string of text which is later replaced with its definition by the preprocessor.
 
-To define a macro, use a `$` followed by a name and its definition
+To define a macro, use a `=` followed by a name and its definition
 
 ```
-$greet say Hello!
+=greet say Hello!
 ```
 
 To use the macro, simply type it's name.
